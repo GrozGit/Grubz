@@ -1,3 +1,8 @@
-Grubz
-=====
-Motor Team L & D projects - new repo setup on 8th Nov 2014 as original repo damaged (DaveH)
+﻿# Grubz
+
+## Configuring your development environment
+
+ * Install Node.js
+ * Clone the grubz repo
+ * `npm install -g grunt-cli bower`
+ * `npm install` to install local project dependencies`

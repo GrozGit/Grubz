@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Grubz</Name>
+    <RootNamespace>Grubz</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b68f9ee2-7c44-46cc-96b4-310ac934fce7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="client\js\foundation\foundation.abide.js" />
+    <Compile Include="client\js\foundation\foundation.accordion.js" />
+    <Compile Include="client\js\foundation\foundation.alert.js" />
+    <Compile Include="client\js\foundation\foundation.clearing.js" />
+    <Compile Include="client\js\foundation\foundation.dropdown.js" />
+    <Compile Include="client\js\foundation\foundation.equalizer.js" />
+    <Compile Include="client\js\foundation\foundation.interchange.js" />
+    <Compile Include="client\js\foundation\foundation.joyride.js" />
+    <Compile Include="client\js\foundation\foundation.js" />
+    <Compile Include="client\js\foundation\foundation.magellan.js" />
+    <Compile Include="client\js\foundation\foundation.offcanvas.js" />
+    <Compile Include="client\js\foundation\foundation.orbit.js" />
+    <Compile Include="client\js\foundation\foundation.reveal.js" />
+    <Compile Include="client\js\foundation\foundation.slider.js" />
+    <Compile Include="client\js\foundation\foundation.tab.js" />
+    <Compile Include="client\js\foundation\foundation.tooltip.js" />
+    <Compile Include="client\js\foundation\foundation.topbar.js" />
+    <Compile Include="Controllers\index.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="Controllers\restaurantController.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="data_models\Schema.js" />
+    <Compile Include="Gruntfile.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="logger\logger.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="msgs.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="routes\ReviewController.js" />
+    <Compile Include="server.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="client\js\Grubz.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="test\dummyTest.js" />
+    <Compile Include="test\restaurantSpec.js" />
+    <Compile Include="test\ReviewSpec.js" />
+    <Content Include="client\scss\foundation\foundation.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_accordion.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_alert-boxes.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_block-grid.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_breadcrumbs.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_button-groups.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_buttons.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_clearing.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_dropdown-buttons.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_dropdown.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_flex-video.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_forms.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_global.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_grid.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_icon-bar.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_inline-lists.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_joyride.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_keystrokes.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_labels.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_magellan.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_offcanvas.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_orbit.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_pagination.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_panels.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_pricing-tables.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_progress-bars.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_range-slider.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_reveal.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_side-nav.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_split-buttons.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_sub-nav.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_switches.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_tables.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_tabs.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_thumbs.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_toolbar.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_tooltips.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_top-bar.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_type.scss" />
+    <Content Include="client\scss\foundation\foundation\components\_visibility.scss" />
+    <Content Include="client\scss\foundation\foundation\_functions.scss" />
+    <Content Include="client\scss\foundation\foundation\_settings.scss" />
+    <Content Include="client\scss\foundation\normalize.scss" />
+    <Content Include="client\scss\main.css">
+      <SubType>Content</SubType>
+      <DependentUpon>client\scss\main.scss</DependentUpon>
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Content>
+    <Content Include="client\scss\main.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\Menu.jade" />
+    <Content Include="views\Restaurant.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\js\foundation\" />
+    <Folder Include="client\scss\" />
+    <Folder Include="client\scss\foundation\" />
+    <Folder Include="client\scss\foundation\foundation\" />
+    <Folder Include="client\scss\foundation\foundation\components\" />
+    <Folder Include="logger\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="client\" />
+    <Folder Include="client\js\" />
+    <Folder Include="data_models\" />
+    <Folder Include="models\" />
+    <Folder Include="routes\" />
+    <Folder Include="test\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

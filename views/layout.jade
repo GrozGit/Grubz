@@ -1,0 +1,25 @@
+﻿html
+  head
+    title #{title}
+    link(href="/main.css" rel="stylesheet" type="text/css")
+    body
+
+    nav.top-bar(role="navigation" data-topbar)
+        ul.title-area
+            li.name 
+                h1 
+                    a("#") Grubz
+
+        section.top-bar-section
+            ul.right
+                li
+                    a("#") Login
+            ul.left
+                li
+                    a("#") test2
+                li
+                    a("#") test1
+
+    .row
+        .large-12.columns
+            block content

@@ -1,0 +1,16 @@
+* text=auto
+
+# IMAGES
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+
+# OTHER BINARIES
+*.psd binary
+*.exe binary
+*.bin binary
+*.dll binary
+*.jar binary
+*.zip binary
+*.msi binary
